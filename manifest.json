@@ -1,0 +1,10 @@
+{
+    "id": "finite-automata-diagrams",
+    "name": "Finite Automata Diagrams",
+    "version": "1.0.0",
+    "minAppVersion": "1.5.0",
+    "description": "Render DFA/NFA diagrams from Markdown.",
+    "author": "AaryanKh",
+    "authorUrl": "https://github.com/AaryanKhClasses",
+    "isDesktopOnly": false
+}

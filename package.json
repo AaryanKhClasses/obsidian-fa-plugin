@@ -1,0 +1,29 @@
+{
+    "name": "obsidian-fa-plugin",
+    "version": "1.0.0",
+    "description": "An Obsidian Plugin to render DFA/NFA diagrams from Markdown.",
+    "main": "esbuild.config.mjs",
+    "scripts": {
+        "build": "node esbuild.config.mjs",
+        "dev": "node esbuild.config.mjs --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AaryanKhClasses/obsidian-fa-plugin.git"
+    },
+    "author": "AaryanKh",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/AaryanKhClasses/obsidian-fa-plugin/issues"
+    },
+    "homepage": "https://github.com/AaryanKhClasses/obsidian-fa-plugin#readme",
+    "devDependencies": {
+        "@types/node": "^25.0.10",
+        "esbuild": "^0.27.2",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "@viz-js/viz": "^3.24.0",
+        "obsidian": "^1.11.4"
+    }
+}
