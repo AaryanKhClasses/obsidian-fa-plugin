@@ -1,6 +1,6 @@
 {
     "name": "obsidian-fa-plugin",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "An Obsidian Plugin to render DFA/NFA diagrams from Markdown.",
     "main": "esbuild.config.mjs",
     "scripts": {

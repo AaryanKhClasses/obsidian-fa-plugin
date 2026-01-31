@@ -11,6 +11,14 @@ export default function registerFAProcessor(plugin: Plugin) {
             const graph = normalizeGraph(raw)
             const dot = graphToDot(graph)
             const svg = await renderDotToSVG(dot)
+
+            svg.querySelectorAll('polygon, rect').forEach(el => {
+                const fill = el.getAttribute('fill')
+                if(fill === 'white' || fill === '#ffffff' || fill === 'none') el.remove()
+            })
+            el.classList.add('fa-diagram')
+            svg.style.background = 'transparent'
+            svg.style.display = 'block'
             el.appendChild(svg)
         } catch(err: any) {
             const errorEl = document.createElement('div')
